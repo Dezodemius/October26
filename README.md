@@ -17,6 +17,14 @@
   <a href="https://github.com/Dezodemius/October26/releases/latest"><img src="https://img.shields.io/badge/%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%BF%D0%BE%D1%81%D0%BB%D0%B5%D0%B4%D0%BD%D1%8E%D1%8E_%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E-FFD21A?style=for-the-badge" alt="Скачать последнюю версию"></a>
 </p>
 
+## Содержание
+
+- [О приложении](#домашний-кинотеатр-на-ваших-устройствах)
+- [Как выглядит приложение](#как-выглядит-приложение)
+- [Инструкции в wiki](#инструкции-в-wiki)
+- [Скачать](#скачать)
+- [Ошибки и предложения](#ошибки-и-предложения)
+
 ## Домашний кинотеатр на ваших устройствах
 
 Октябрь 26 помогает находить фильмы и сериалы, выбирать качество и озвучку,
@@ -40,17 +48,15 @@
 
 ![Главная страница «Октябрь 26»](docs/screenshot-home.png)
 
-## Содержание
+## Инструкции в wiki
 
 ### Установка на ваше устройство
 
-| Устройство | Инструкция |
-|---|---|
-| Компьютер с Windows x64 | [Установка и первый запуск](https://github.com/Dezodemius/October26/wiki/Windows) |
-| Роутер Netcraze / Keenetic ARM64 с Entware | [Подготовка роутера и установка](https://github.com/Dezodemius/October26/wiki/Router) |
-| Телевизор или приставка с Android TV / Google TV, Android 11+ | [Установка и настройка телевизора](https://github.com/Dezodemius/October26/wiki/Android-TV) |
-| Телефон или планшет с Android 11+ | [Установка Android-приложения](https://github.com/Dezodemius/October26/wiki/Android) |
-| iPhone или iPad | [Просмотр через Safari](https://github.com/Dezodemius/October26/wiki/iPhone-iPad) |
+- [Компьютер с Windows x64](https://github.com/Dezodemius/October26/wiki/Windows)
+- [Роутер Netcraze / Keenetic ARM64 с Entware](https://github.com/Dezodemius/October26/wiki/Router)
+- [Телевизор или приставка с Android TV / Google TV, Android 11+](https://github.com/Dezodemius/October26/wiki/Android-TV)
+- [Телефон или планшет с Android 11+](https://github.com/Dezodemius/October26/wiki/Android)
+- [iPhone или iPad — просмотр через Safari](https://github.com/Dezodemius/October26/wiki/iPhone-iPad)
 
 ### Настройка и использование
 
@@ -63,13 +69,11 @@
 
 Готовые файлы находятся в [последнем релизе](https://github.com/Dezodemius/October26/releases/latest):
 
-| Устройство | Файл |
-|---|---|
-| Windows x64 | `october26-desktop-ВЕРСИЯ.zip` |
-| Поддерживаемый роутер ARM64 с Entware | `october26-router-ВЕРСИЯ.zip` |
-| Android и Android TV, Android 11+ | `october26-android-ВЕРСИЯ.apk` |
+- **Windows x64:** `october26-desktop-ВЕРСИЯ.zip`.
+- **Поддерживаемый роутер ARM64 с Entware:** `october26-router-ВЕРСИЯ.zip`.
+- **Android и Android TV, Android 11+:** `october26-android-ВЕРСИЯ.apk`.
 
-Перед установкой выберите инструкцию для своего устройства в содержании выше.
+Перед установкой выберите [инструкцию для своего устройства](#установка-на-ваше-устройство).
 Для Samsung Tizen и LG webOS Android-пакет не подходит.
 Приложение рассчитано на домашнюю сеть: не открывайте порт хаба в интернет.
 
