@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "counters": {
+    "BUG": 0,
+    "FEAT": 1
+  },
+  "issues": {
+    "14": {
+      "prefix": "FEAT",
+      "number": 1
+    }
+  }
+}
