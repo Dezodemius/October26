@@ -87,7 +87,7 @@
 ```sh
 /opt/etc/init.d/S99kinodom status    # работает ли, последние строки журнала
 /opt/etc/init.d/S99kinodom restart
-tail -n 50 /opt/var/log/kinodom.log  # журнал
+tail -n 50 /opt/kinodom/hub.log  # журнал; архивы hub.log.1–3
 passwd                               # сменить пароль Entware (рекомендуется)
 ```
 

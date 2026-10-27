@@ -1,0 +1,40 @@
+name: Issue numbering
+
+on:
+  issues:
+    types: [opened, labeled, unlabeled, edited, reopened]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to assign or repair
+        required: true
+        type: number
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  number:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+      - uses: actions/github-script@v8
+        env:
+          MANUAL_ISSUE_NUMBER: ${{ inputs.issue_number }}
+        with:
+          script: |
+            const { numberIssue } = require('./.github/scripts/issue-numbering.cjs');
+            let numberingContext = context;
+            if (context.eventName === 'workflow_dispatch') {
+              const number = Number(process.env.MANUAL_ISSUE_NUMBER);
+              if (!Number.isSafeInteger(number) || number < 1) {
+                throw new Error('issue_number must be a positive integer');
+              }
+              numberingContext = { repo: context.repo, issue: { number } };
+            }
+            await numberIssue({ github, context: numberingContext, core });
