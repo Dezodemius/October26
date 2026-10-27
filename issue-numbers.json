@@ -2,7 +2,7 @@
   "version": 1,
   "counters": {
     "BUG": 7,
-    "FEAT": 16
+    "FEAT": 17
   },
   "issues": {
     "13": {
@@ -96,6 +96,10 @@
     "35": {
       "prefix": "FEAT",
       "number": 16
+    },
+    "36": {
+      "prefix": "FEAT",
+      "number": 17
     }
   }
 }
